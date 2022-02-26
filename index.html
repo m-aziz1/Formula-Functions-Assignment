@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, intitial scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formula Functions</title>
+  </head>
+
+  <body>
+    <br />
+    <img src="images/arithmetic-sequence.png" alt="formula-img" />
+    <p>
+      Enter "find" in the input field of the value you are trying to find, and
+      fill in the values for the other components of the formula.
+    </p>
+
+    <p>
+      <strong
+        >Try finding the 20<sup>th</sup> term of the following sequence: 25, 31,
+        37, 43, 49... </strong
+      ><br />
+      <sub>(a<sub>n</sub> = 139, a = 25, n = 20, d = 6)</sub>
+    </p>
+
+    <p>
+      n<sup>th</sup> term(a<sub>n</sub>):
+      <input type="text" id="nth-term" list="find-value" />
+    </p>
+    <p>
+      1st term (a): <input type="text" id="first-term" list="find-value" />
+    </p>
+    <p>
+      Term number (n):
+      <input type="text" id="term-number" list="find-value" />
+    </p>
+    <p>
+      Common difference (d):
+      <input type="text" id="difference" list="find-value" />
+    </p>
+
+    <datalist id="find-value">
+      <option value="find"></option>
+    </datalist>
+
+    <button id="calc-btn">Calculate</button>
+
+    <p>Answer: <span id="output">---</span></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
